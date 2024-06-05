@@ -1,14 +1,11 @@
 package com.zonni.main;
 
-import com.zonni.main.modules.Animal;
-import com.zonni.main.modules.Cachorro;
-import com.zonni.main.modules.Client;
-import com.zonni.main.modules.Gato;
+import com.zonni.main.modules.Empregado;
+import com.zonni.main.modules.EmpregadoAssalariado;
 
 public class Main {
     public static void main(String[] args) {
-        Animal cachorro = new Cachorro();
-        Client client = new Client("Caio", cachorro);
-        client.animal.comer();
+        Empregado emp_1 = new EmpregadoAssalariado("Lucas", "Zonzini Lisboa", "485.094.334-89", 768.89);
+        System.out.println(emp_1.toString());
     }
 }
